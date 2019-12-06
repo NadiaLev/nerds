@@ -8,7 +8,7 @@
     <header class="main-header">
       <div class="main-container">
         <div class="main-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </div>
         <nav class="main-navigation">
           <ul class="site-navigation">
@@ -31,10 +31,7 @@
         <section class="slider">
           <h2 class="visually-hidden">Преимущества</h2>
           <ol class="slider-indicators">
-            <li
-              class="slider-indicator slider-indicator-active"
-              data-slide-to="0"
-            ></li>
+            <li class="slider-indicator slider-indicator-active" data-slide-to="0"></li>
             <li class="slider-indicator" data-slide-to="1"></li>
             <li class="slider-indicator" data-slide-to="2"></li>
           </ol>
@@ -156,12 +153,12 @@
             <ul class="partner-item">
               <li>
                 <a href="https://htmlacademy.ru/intensive/htmlcss"
-                  ><img src="img/partner-1.png" width="199" height="68" alt="Партнер1"
+                  ><img src="img/partner-1.png" width="199" height="68" alt="Партнер html academy"
                 ></a>
               </li>
-              <li><img src="img/partner-2.png" width="209" height="87" alt="Партнер2"></li>
-              <li><img src="img/partner-3.png" width="185" height="52" alt="Партнер3"></li>
-              <li><img src="img/partner-4.png" width="173" height="84" alt="Партнер4"></li>
+              <li><img src="img/partner-2.png" width="209" height="87" alt="Партнер Barbershop BORODINSKI"></li>
+              <li><img src="img/partner-3.png" width="185" height="52" alt="Партнер PINK"></li>
+              <li><img src="img/partner-4.png" width="173" height="84" alt="Партнер MISHKA"></li>
             </ul>
           </section>
         </section>
@@ -171,7 +168,7 @@
       <section class="connection">
         <h3 class="visually-hidden">Связаться со студией</h3>
         <div class="connection-map">
-          <img class="map" src="img/map.png" width="1440" height="416" alt="Карта" />
+          <img class="map" src="img/map.png" width="1440" height="416" alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург" />
         </div>
         <div class="footer-contacts">
           <p>Nёrds design studio</p>
@@ -185,9 +182,9 @@
       </section>
       <div class="footer-social">
         <ul class="social">
-          <li><a href="#">В контакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Интстаграм</a></li>
+            <li><a href="#" aria-label="Дизайн-студия Нёрдс В контакте"></a></li>
+            <li><a href="#" aria-label="Дизайн-студия Нёрдс в Фейсбук"></a></li>
+            <li><a href="#" aria-label="Дизайн-студия Нёрдс в Инстаграм"></a></li>
         </ul>
         <p>
           <b>Давайте дружить, это выгодно!</b>
@@ -197,8 +194,22 @@
     </footer>
     <section class="modal">
       <h2>Напишите нам</h2>
-      <button type="button">Закрыть</button>
-      <!--здесь будет форма-->
+      <button type="button" aria-label="Закрыть"></button>
+      <form action="send.php" method="POST">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" id="user-name" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="text" id="user-email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-text">Текст письма:</label>
+          <textarea id="user-text" name="name">В свободной форме</textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
     </section>
   </body>
 </html>
