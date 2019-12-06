@@ -9,7 +9,7 @@
       <div class="main-container">
         <div class="main-logo">
           <a href="index.html" title="На главную"
-            ><img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс"
+            ><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"
           /></a>
         </div>
         <nav class="main-navigation">
@@ -32,7 +32,56 @@
         <h1 class="page-title">Магазин готовых шаблонов</h1>
         <section class="filters">
           <h2 class="visually-hidden">Фильтр</h2>
-          <!--Здесь будет форма-->
+          <form action="send.php" method="get">
+            <div>
+              <label for="filter-cost">Стоимость:</label>
+              <input type="range" id="filter-cost" name="cost">
+              <p>от <span>0</span> до <span>15000</span></p>
+            </div>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" id="filter-adaptive" name="grid" value="adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" id="filter-fixed" name="grid" value="fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" id="filter-rubber" name="grid" value="rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" id="filter-slider" name="slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-advantages" name="advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-news" name="news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-gallery" name="gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-trash" name="trash">
+                  <label for="filter-trash">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
         </section>
         <div class="right-column">
           <section class="sort">
@@ -43,29 +92,29 @@
               <li><a href="#">по типу</a></li>
               <li><a href="#">по названию</a></li>
             </ul>
-            <button type="button">Вниз</button>
-            <button type="button">Вверх</button>
+            <button type="button" aria-label="Вниз"></button>
+            <button type="button" aria-label="Вверх"></button>
           </section>
           <section class="catalog">
             <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <div>
-                  <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон1">
+                  <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Sedona">
                 </div>
                 <div>
-                  <h3><a href="#" title="Ознакомиться с сайтом">Sedona</a></h3>
+                  <h3><a href="#" title="Ознакомиться с сайтом Sedona">Sedona</a></h3>
                   <p>Информационный сайт для туристов</p>
                   <a class="button" href="#" title="Оплатить">9900 руб.</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <div>
-                  <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон2">
+                  <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта Pink App ">
                 </div>
                 <div>
                   <h3>
-                    <a href="#" title="Ознакомиться с сайтом">Pink App</a>
+                    <a href="#" title="Ознакомиться с сайтом Pink App">Pink App</a>
                   </h3>
                   <p>Продуктовый лендинг приложения для iOS и Android</p>
                   <a class="button" href="#" title="Оплатить">9900 руб.</a>
@@ -73,11 +122,11 @@
               </li>
               <li class="catalog-item">
                 <div>
-                  <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон3">
+                  <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта Barbershop ">
                 </div>
                 <div>
                   <h3>
-                    <a href="#" title="Ознакомиться с сайтом">Barbershop</a>
+                    <a href="#" title="Ознакомиться с сайтом Barbershop">Barbershop</a>
                   </h3>
                   <p>Для мужчин, да.</p>
                   <a class="button" href="#" title="Оплатить">9900 руб.</a>
@@ -85,42 +134,46 @@
               </li>
               <li class="catalog-item">
                 <div>
-                  <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон4">
+                  <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта Mishka">
                 </div>
                 <div>
-                  <h3><a href="#" title="Ознакомиться с сайтом">Mishka</a></h3>
+                  <h3>
+                    <a href="#" title="Ознакомиться с сайтом Mishka">Mishka</a>
+                  </h3>
                   <p>Интернет-магазин вязаных игрушек.</p>
                   <a class="button" href="#" title="Оплатить">9900 руб.</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <div>
-                  <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон5">
+                  <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта A plus">
                 </div>
                 <div>
-                  <h3><a href="#" title="Ознакомиться с сайтом">A plus</a></h3>
+                  <h3>
+                    <a href="#" title="Ознакомиться с сайтом A plus">A plus</a>
+                  </h3>
                   <p>Лендинг курсов повышения квалификации</p>
                   <a class="button" href="#" title="Оплатить">9900 руб.</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <div>
-                  <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон6">
+                  <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта  Kvast">
                 </div>
                 <div>
-                  <h3><a href="#" title="Ознакомиться с сайтом">Kvast</a></h3>
+                  <h3>
+                    <a href="#" title="Ознакомиться с сайтом Kvast">Kvast</a>
+                  </h3>
                   <p>Промо-сайт производителя крафтового кваса.</p>
                   <a class="button" href="#" title="Оплатить">9900 руб.</a>
                 </div>
               </li>
             </ul>
             <ul class="pagination-list">
-              <li class="pagination-item pagination-item-current">
-                <a href="#">1</a>
-              </li>
-              <li class="pagination-item"><a>2</a></li>
-              <li class="pagination-item"><a>3</a></li>
-              <li class="pagination-item"><a>Следующая</a></li>
+              <li class="pagination-item pagination-item-current"><a>1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item"><a href="#">Следующая</a></li>
             </ul>
           </section>
         </div>
@@ -130,7 +183,7 @@
       <section class="connection">
         <h2 class="visually-hidden">Связаться со студией</h2>
         <div class="connection-map">
-          <img class="map" src="img/map.png" width="1440" height="416" alt="Карта">
+          <img class="map" src="img/map.png" width="1440" height="416" alt="Офис компании по адресу: ул.Б.Конюшенная, д. 19/8, Санкт-Петербург">
         </div>
         <div class="footer-contacts">
           <p>Nёrds design studio</p>
@@ -139,14 +192,14 @@
             ул. Б.Конюшенная, д. 19/8
           </address>
           <p><a href="tel:+78122757575">тел.+7(812)275-75-75</a></p>
-          <a href="#">Напишите нам</a>
+          <button type="button">Напишите нам</button>
         </div>
       </section>
       <div class="footer-social">
         <ul class="social">
-          <li><a href="#">В контакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Интстаграм</a></li>
+          <li><a href="#" aria-label="Дизайн-студия Нёрдс В контакте"></a></li>
+          <li><a href="#" aria-label="Дизайн-студия Нёрдс в Фейсбук"></a></li>
+          <li><a href="#" aria-label="Дизайн-студия Нёрдс в Инстаграм"></a></li>
         </ul>
         <p>
           <b>Давайте дружить, это выгодно!</b>
@@ -156,8 +209,22 @@
     </footer>
     <section class="modal">
       <h2>Напишите нам</h2>
-      <button type="button">Закрыть</button>
-      <!--здесь будет форма-->
+      <button type="button" aria-label="Закрыть"></button>
+      <form action="send.php" method="POST">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" id="user-name" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="text" id="user-email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-text">Текст письма:</label>
+          <textarea id="user-text" name="name">В свободной форме</textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
     </section>
   </body>
 </html>
