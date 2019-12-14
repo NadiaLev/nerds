@@ -15,7 +15,7 @@
         </div>
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li><a href="studio.html">Студия</a></li>
+          <li><a href="studio.html">Студия</a></li>
             <li><a href="customers.html">Клиенты</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
@@ -203,15 +203,15 @@
         <form class="modal-form" action="#" method="POST">
           <p>
             <label for="user-name">Ваше имя:</label>
-            <input type="text" id="user-name" name="name" value="" placeholder="Имя Фамилия">
+            <input type="text" id="user-name" name="name" value="" placeholder="Имя Фамилия" required>
           </p>
           <p>
             <label for="user-email">Ваш e-mail:</label>
-            <input type="text" id="user-email" name="email" value="" placeholder="email@example.com">
+            <input type="text" id="user-email" name="email" value="" placeholder="email@example.com" required>
           </p>
           <p>
             <label for="user-text">Текст письма:</label>
-            <textarea id="user-text" name="name">В свободной форме</textarea>
+            <textarea id="user-text" name="name" required>В свободной форме</textarea>
           </p>
           <button class="send-btn" type="submit">Отправить</button>
         </form>
