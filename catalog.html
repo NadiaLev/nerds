@@ -40,7 +40,7 @@
           <h1 class="page-title">Магазин готовых шаблонов</h1>
         </div>
       </div>
-      <div class="main-container">
+      <div class="main-container catalog-column">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр</h2>
           <form class="filter-form" action="#" method="get">
@@ -64,7 +64,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Сетка:</legend>
               <ul class="filter-grid">
                 <li class="filter-option">
@@ -100,7 +100,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Особенности:</legend>
               <ul class="filter-features">
                 <li class="filter-option">
@@ -159,19 +159,21 @@
           <section class="sort">
             <h2 class="visually-hidden">Сортировка</h2>
             <p>Сортировать:</p>
-            <ul class="sort-list">
-              <li class="sort-item"><a href="#">по цене</a></li>
-              <li class="sort-item"><a href="#">по типу</a></li>
-              <li class="sort-item"><a href="#">по названию</a></li>
-            </ul>
-            <button type="button" aria-label="Вниз"></button>
-            <button type="button" aria-label="Вверх"></button>
+            <div class="sort-group">
+              <ul class="sort-list">
+                <li class="sort-item"><a href="#">по цене</a></li>
+                <li class="sort-item"><a href="#">по типу</a></li>
+                <li class="sort-item"><a href="#">по названию</a></li>
+              </ul>
+              <button type="button" aria-label="Вниз"></button>
+              <button type="button" aria-label="Вверх"></button>
+            </div>
           </section>
           <section class="catalog">
             <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
-                <div>
+                <div class="review-website">
                   <img
                     src="img/img-sedona.jpg"
                     width="360"
@@ -191,7 +193,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <div>
+                <div class="review-website">
                   <img
                     src="img/img-pink.jpg"
                     width="360"
@@ -213,7 +215,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <div>
+                <div class="review-website">
                   <img
                     src="img/img-barbershop.jpg"
                     width="360"
@@ -235,7 +237,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <div>
+                <div class="review-website">
                   <img
                     src="img/img-mishka.jpg"
                     width="360"
@@ -255,7 +257,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <div>
+                <div class="review-website">
                   <img
                     src="img/img-aplus.jpg"
                     width="360"
@@ -275,7 +277,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <div>
+                <div class="review-website">
                   <img
                     src="img/img-kvast.jpg"
                     width="360"
@@ -320,75 +322,83 @@
           />
         </div>
         <div class="footer-contacts">
-          <p class="addressee">Nёrds design studio</p>
-          <address>
-            191186, Санкт-Петербург,<br />
-            ул. Б.Конюшенная, д. 19/8
-          </address>
-          <p><a href="tel:+78122757575" class="tel">тел.+7(812)275-75-75</a></p>
-          <a href="#" class="write-btn">Напишите нам</a>
+          <div class="footer-contacts-container">
+            <p class="addressee">Nёrds design studio</p>
+            <address>
+              191186, Санкт-Петербург,<br />
+              ул. Б.Конюшенная, д. 19/8
+            </address>
+            <p class="number-tel">
+              <a href="tel:+78122757575" class="tel">тел.+7(812)275-75-75</a>
+            </p>
+            <a href="#" class="write-btn">Напишите нам</a>
+          </div>
         </div>
       </section>
       <div class="footer-social">
-        <ul class="social">
-          <li>
-            <a
-              href="#"
-              class="social-btn social-btn-vk"
-              aria-label="Дизайн-студия Нёрдс В контакте"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="social-btn social-btn-fb"
-              aria-label="Дизайн-студия Нёрдс в Фейсбук"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="social-btn social-btn-in"
-              aria-label="Дизайн-студия Нёрдс в Инстаграм"
-            ></a>
-          </li>
-        </ul>
-        <p>
-          <b>Давайте дружить, это выгодно!</b>
-          Скидка 10% для друзей из социальных сетей.
-        </p>
+        <div class="main-container">
+          <ul class="social">
+            <li>
+              <a
+                href="#"
+                class="social-btn social-btn-vk"
+                aria-label="Дизайн-студия Нёрдс В контакте"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="social-btn social-btn-fb"
+                aria-label="Дизайн-студия Нёрдс в Фейсбук"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="social-btn social-btn-in"
+                aria-label="Дизайн-студия Нёрдс в Инстаграм"
+              ></a>
+            </li>
+          </ul>
+          <div class="sale">
+            <p>Давайте дружить, это выгодно!</p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
       </div>
     </footer>
     <section class="modal-window">
-      <h2>Напишите нам</h2>
-      <button type="button" aria-label="Закрыть"></button>
-      <form class="modal-form" action="#" method="POST">
-        <p>
-          <label for="user-name">Ваше имя:</label>
-          <input
-            type="text"
-            id="user-name"
-            name="name"
-            value=""
-            placeholder="Имя Фамилия"
-          />
-        </p>
-        <p>
-          <label for="user-email">Ваш e-mail:</label>
-          <input
-            type="text"
-            id="user-email"
-            name="email"
-            value=""
-            placeholder="email@example.com"
-          />
-        </p>
-        <p>
-          <label for="user-text">Текст письма:</label>
-          <textarea id="user-text" name="name">В свободной форме</textarea>
-        </p>
-        <button class="send-btn" type="submit">Отправить</button>
-      </form>
+      <div class="modal-container">
+        <h2>Напишите нам</h2>
+        <button type="button" aria-label="Закрыть"></button>
+        <form class="modal-form" action="#" method="POST">
+          <p>
+            <label for="user-name">Ваше имя:</label>
+            <input
+              type="text"
+              id="user-name"
+              name="name"
+              value=""
+              placeholder="Имя Фамилия"
+            />
+          </p>
+          <p>
+            <label for="user-email">Ваш e-mail:</label>
+            <input
+              type="text"
+              id="user-email"
+              name="email"
+              value=""
+              placeholder="email@example.com"
+            />
+          </p>
+          <p>
+            <label for="user-text">Текст письма:</label>
+            <textarea id="user-text" name="name">В свободной форме</textarea>
+          </p>
+          <button class="send-btn" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
