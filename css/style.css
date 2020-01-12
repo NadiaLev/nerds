@@ -276,19 +276,17 @@ input[type="radio"].visually-hidden {
 
 .social {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-top: 69px;
   margin-bottom: 69px;
   padding: 0;
+  width: 270px;
   list-style: none;
 }
 
 .social li {
   margin-right: 12px;
-}
-
-.social li:last-child {
-  margin-right: 0;
 }
 
 .social .social-btn {
@@ -330,7 +328,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sale {
-  margin-left: 140px;
+  margin-left: 130px;
 }
 
 .sale p {
@@ -357,7 +355,10 @@ input[type="radio"].visually-hidden {
   left: 50%;
   margin-left: -480px;
   width: 960px;
-  padding: 70px 100px;
+  padding-top: 70px;
+  padding-right: 100px;
+  padding-bottom: 85px;
+  padding-left: 100px;
   min-height: 590px;
   background-color: #ffffff;
   background-image: url("../img/modal-back.png");
@@ -366,7 +367,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
   box-sizing: border-box;
   display: none;
-  z-index: 5;
+  z-index: 100;
 }
 
 @keyframes bounce {
@@ -442,7 +443,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
-.modal-form {
+.modal-form div {
   display: flex;
   flex-wrap: wrap;
   width: 760px;
@@ -455,17 +456,22 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
 }
 
-.modal-form label {
+.modal label {
   line-height: 18px;
   font-weight: 700;
 }
 
-.modal-form p:first-child {
+.modal p {
+  margin: 0;
+  margin-top: 35px;
+}
+
+.modal p:first-child {
   margin-right: 40px;
 }
 
-.modal-form input[type="text"],
-.modal-form textarea {
+.modal input[type="text"],
+.modal textarea {
   display: block;
   margin-top: 10px;
   padding-top: 14px;
@@ -480,31 +486,33 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
-.modal-form textarea {
+.modal textarea {
   width: 760px;
-  margin-bottom: 47px;
   min-height: 118px;
+  resize: none;
+  order: 100;
 }
 
-.modal-form input[type="text"]:hover,
-.modal-form textarea:hover {
+.modal input[type="text"]:hover,
+.modal textarea:hover {
   border: 2px solid #b4b9bb;
 }
 
-.modal-form input[type="text"]:invalid,
-.modal-form textarea:invalid {
+.modal input[type="text"]:invalid,
+.modal textarea:invalid {
   color: #e74246;
   border: 2px solid #e74246;
 }
 
-.modal-form input[type="text"]:focus,
-.modal-form textarea:focus {
+.modal input[type="text"]:focus,
+.modal textarea:focus {
   color: rgba(68, 68, 68, 1);
   border: 2px solid #000000;
 }
 
 .modal-form .send-btn {
   width: 260px;
+  margin-top: 47px;
   padding: 16px;
   font: inherit;
   border: none;
@@ -781,10 +789,16 @@ input[type="radio"].visually-hidden {
 
 .figure-item {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-top: 41px;
   padding: 0;
+  width: 360px;
   list-style: none;
+}
+
+.figure-item li {
+  margin-bottom: 20px;
 }
 
 .figure-item li:nth-child(1) {

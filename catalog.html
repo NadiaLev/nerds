@@ -119,8 +119,8 @@
               <li class="sort-item"><a href="#">по названию</a></li>
             </ul>
             <div class="sort-arrows">
-              <button class="button-down" type="button" aria-label="Вниз"></button>
-              <button class="button-up" type="button" aria-label="Вверх"></button>
+              <button class="button-down" type="button" aria-label="Вниз" title="Вниз"></button>
+              <button class="button-up" type="button" aria-label="Вверх" title="Вверх"></button>
             </div>
           </div>
         </section>
@@ -204,7 +204,7 @@
             </li>
             <li class="catalog-item">
               <div class="review-website">
-                <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта  Kvast" />
+                <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта Kvast" />
               </div>
               <div class="buy-website">
                 <h3 class="website">
@@ -258,13 +258,16 @@
       <div class="main-container">
         <ul class="social">
           <li>
-            <a href="#" class="social-btn social-btn-vk" aria-label="Дизайн-студия Нёрдс В контакте"></a>
+            <a href="#" class="social-btn social-btn-vk" aria-label="Дизайн-студия Нёрдс Вконтакте"
+              title="Дизайн-студия Нёрдс Вконтакте"></a>
           </li>
           <li>
-            <a href="#" class="social-btn social-btn-fb" aria-label="Дизайн-студия Нёрдс в Фейсбук"></a>
+            <a href="#" class="social-btn social-btn-fb" aria-label="Дизайн-студия Нёрдс в Facebook"
+              title="Дизайн-студия Нёрдс в Facebook"></a>
           </li>
           <li>
-            <a href="#" class="social-btn social-btn-in" aria-label="Дизайн-студия Нёрдс в Инстаграм"></a>
+            <a href="#" class="social-btn social-btn-in" aria-label="Дизайн-студия Нёрдс в Instagram"
+              title="Дизайн-студия Нёрдс в Instagram"></a>
           </li>
         </ul>
         <div class="sale">
@@ -278,18 +281,20 @@
     <h2>Напишите нам</h2>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
     <form class="modal-form" action="#" method="POST">
-      <p>
-        <label for="user-name">Ваше имя:</label>
-        <input type="text" id="user-name" name="fullname" value="" placeholder="Имя Фамилия" />
-      </p>
-      <p>
-        <label for="user-email">Ваш e-mail:</label>
-        <input type="text" id="user-email" name="email" value="" placeholder="email@example.com" />
-      </p>
-      <p>
-        <label for="user-text">Текст письма:</label>
-        <textarea id="user-text" name="content">В свободной форме</textarea>
-      </p>
+      <div class="modal">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" id="user-name" name="fullname" value="" placeholder="Имя Фамилия" />
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="text" id="user-email" name="email" value="" placeholder="email@example.com" />
+        </p>
+        <p>
+          <label for="user-text">Текст письма:</label>
+          <textarea id="user-text" name="content">В свободной форме</textarea>
+        </p>
+      </div>
       <button class="btn send-btn" type="submit">Отправить</button>
     </form>
   </section>
